@@ -7,6 +7,7 @@ mongoose.connection
 
 beforeEach(done => {
   mongoose.connection.collections.users.drop(() => {
+      
     done();
   });
 });
